@@ -46,10 +46,11 @@ server <- function(input, output) {
   # Essa função é reativa. Isso significa que o histograma
   # vai mudar sempre que o valor do número de classes mudar.
   output$distPlot <- renderPlot({
-
+# Existe uma função render_() para cada tipo de objeto.
     x    <- iris$Sepal.Length
     bins <- seq(min(x), max(x), length.out = input$classes + 1)
-
+# para acessar o valor escolhido para o número de classes 
+    # no exemplo do histograma, utilizaremos input$classes.
     hist(x, breaks = bins, col = "forestgreen", border = "white",
          xlab = "Comprimento de sépalas",
          main = "Histograma da Frequência do Comprimento de Sépalas\n
