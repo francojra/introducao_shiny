@@ -35,13 +35,13 @@ Os outputs devem ser construídos com funções render_(). Existe uma função r
 
 Exemplos:
 
-- renderDataTable: data frames.
-- renderImage: imagens.
-- renderPlot: gráficos.
-- renderPrint: qualquer printed output.
-- renderTable: data frames, matrizes, e outras estruturas em forma de tabela.
-- renderText: strings.
-- renderUI: um elemento do UI ou HTML.
+- **renderDataTable**: data frames.
+- **renderImage**: imagens.
+- **renderPlot**: gráficos.
+- **renderPrint**: qualquer printed output.
+- **renderTable**: data frames, matrizes, e outras estruturas em forma de tabela.
+- **renderText**: strings.
+- **renderUI**: um elemento do UI ou HTML.
 
 Existem algumas funções exclusivas para gráficos de alguns pacotes, por exemplo, renderPlotly, renderGirafe, renderLeaflet, etc. Ao utilizar algum pacote com gráficos interativos procure a função render adequada.
 
@@ -55,3 +55,7 @@ Um fluxo básico seria o seguinte:
 2. O valor reativo input$x é invalidado;
 3. Toda função reativa que depender de input$x é notificada;
 4. Essas funções verificam qual é o novo valor de input$x e atualizam suas saídas.
+
+## Fonte
+
+https://www.est.ufmg.br/~cristianocs/Pacotes2021/AulaShiny.html#1
