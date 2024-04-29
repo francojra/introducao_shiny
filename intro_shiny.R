@@ -10,7 +10,7 @@ ui <- fluidPage(
   sidebarLayout(
 
     # Barra lateral para os inputs.
-    sidebarPanel(
+    sidebarPanel("Painel lateral",
 
       # Input: número de classes do histograma.
       sliderInput(inputId = "classes",
@@ -22,7 +22,7 @@ ui <- fluidPage(
     ),
 
     # Painel principal para mostrar os outputs.
-    mainPanel(
+    mainPanel("Painel principal",
 
       # Output: Histograma
       plotOutput(outputId = "distPlot")
