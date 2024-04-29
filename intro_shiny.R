@@ -51,9 +51,12 @@ server <- function(input, output) {
     bins <- seq(min(x), max(x), length.out = input$classes + 1)
 # para acessar o valor escolhido para o número de classes 
     # no exemplo do histograma, utilizaremos input$classes.
-    hist(x, breaks = bins, col = "forestgreen", border = "white",
-         xlab = "Comprimento de sépalas",
-         main = "Histograma da Frequência do Comprimento de Sépalas\n
+    library(ggplot2)
+       ggplot(iris, aes(x = x)) +
+           geom_histogram(breaks = bins, fill = "forestgreen", 
+                          color = "white") +
+         labs(x = "Comprimento de sépalas",
+         title = "Histograma da Frequência do Comprimento de Sépalas\n
          Dados Iris")
 
   })
