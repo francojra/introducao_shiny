@@ -17,9 +17,10 @@ ui <- fluidPage(
                   # o texto que aparecerá no widget, ajudando o 
                   # usuário a entender o que o input controla.
                   label = "Número de classes:",
-                  min = 1,
+                  min = 1, # Definição dos valores máximos e 
+                  # mínimos que aparecerão no painel de seleção
                   max = 30,
-                  value = 10)
+                  value = 10) # Valor inicial que aparece no app
 
     ),
 
@@ -35,6 +36,8 @@ ui <- fluidPage(
   )
 )
 
+### Criados os inputs e outputs do app, agora precisamos manipulá-los
+### no server side.
 
 # Define o código necessário para a construção de um histograma.
 server <- function(input, output) {
