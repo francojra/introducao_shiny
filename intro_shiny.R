@@ -13,7 +13,9 @@ ui <- fluidPage(
     sidebarPanel("Painel lateral",
 
       # Input: número de classes do histograma.
-      sliderInput(inputId = "classes",
+      sliderInput(inputId = "classes", # O argumento label= recebe 
+                  # o texto que aparecerá no widget, ajudando o 
+                  # usuário a entender o que o input controla.
                   label = "Número de classes:",
                   min = 1,
                   max = 30,
@@ -25,7 +27,9 @@ ui <- fluidPage(
     mainPanel("Painel principal",
 
       # Output: Histograma
-      plotOutput(outputId = "distPlot")
+      plotOutput(outputId = "distPlot") # O output ID  
+      # definirá o nome que usaremos para chamar esse 
+      # input dentro do server.
 
     )
   )
