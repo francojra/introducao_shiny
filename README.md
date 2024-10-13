@@ -6,6 +6,8 @@ O Shiny é um sistema para desenvolvimento de aplicações web usando o R, um pa
 
 Shiny é um framework em linguagem R para a criação de aplicativos web. Por não exigir conhecimento prévio de HTML, CSS e JavaScript, ele democratiza o acesso a essa área de desenvolvimento, permitindo a criação de aplicativos bonitos e complexos a partir de um script R.
 
+O Shiny também possui uma base de JavaScript e CSS para deixar os aplicativos funcionais e com um visual satisfatório. Além disso, podemos utilizar por trás todo o poderio de análise de dados que o R e seus pacotes fornecem. Com esses elementos, já conseguimos construir qualquer tipo de layout e lógica interna.
+
 ## Por que aprender Shiny?
 
 Por ser gratuito e por não exigir de largada conhecimento em desenvolvimento Web, o framework Shiny vem sendo cada vez mais utilizado por empresas e por órgãos do governo para acomodar painéis analíticos ou para comunicar resultados de maneira interativa e dinâmica. Programar em Shiny se tornou um grande diferencial para cientistas de dados.
